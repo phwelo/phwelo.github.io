@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "true"
+resume_avatar:                  "false"
 resume_name:                    "Daniel M. Agans"
 resume_title:                   "Server Automation Engineer"
 resume_contact_email:
