@@ -1,6 +1,6 @@
 # Site settings
-title: "Daniel Agans - Sysadmin/Developer"
-description: "Resume for Daniel Agans, updated 08/27/2016"
+title: "Daniel Agans - Senior Devops Engineer"
+description: "Resume for Daniel Agans"
 
 # Build settings
 markdown: kramdown
@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "false"
 resume_name:                    "Daniel M. Agans"
-resume_title:                   "Server Automation Engineer"
+resume_title:                   "Senior Devops Engineer"
 resume_contact_email:
   "dagans@sdf.ninja"
 
