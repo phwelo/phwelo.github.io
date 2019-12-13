@@ -1,3 +1,530 @@
----
-layout: resume
----
+<!DOCTYPE html>
+<html class="TridactylThemeDark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style>
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwf7I-NP.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMw77I-NP.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwX7I-NP.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwT7I-NP.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Iw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtFumsmv.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNthumsmv.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtNumsmv.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtJumsmv.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtxumg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OVuhpOqc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OXuhpOqc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUehpOqc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OXehpOqc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OXOhpOqc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOX-hpOqc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOVuhpOqc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOXuhpOqc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOXehpOqc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOXOhpOqc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  html{font-family:sans-serif;text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{background:#fff}body{font-family:"Lora", "Minion Pro", Palatino, Georgia, serif;color:#333;font-size:16px;line-height:1.5}.wrapper:before,.wrapper:after{content:"";display:table}.wrapper:after{clear:both}.wrapper{max-width:728px;padding:0 24px;margin:0 auto;zoom:1}.group:before,.group:after{content:"";display:table}.group:after{clear:both}.group{zoom:1}::-moz-selection{background:rgba(51,51,51,0.8);color:#fff;text-shadow:none}::selection{background:rgba(51,51,51,0.8);color:#fff;text-shadow:none}.container{width:980px;margin-right:auto;margin-left:auto}.container:before{display:table;content:""}.container:after{display:table;clear:both;content:""}.columns{margin-right:-10px;margin-left:-10px}.columns:before{display:table;content:""}.columns:after{display:table;clear:both;content:""}.column{float:left;padding-right:10px;padding-left:10px}.one-third{width:33.333333%}.two-thirds{width:66.666667%}.one-fourth{width:25%}.one-half{width:50%}.three-fourths{width:75%}.one-fifth{width:20%}.four-fifths{width:80%}.single-column{padding-right:10px;padding-left:10px}.table-column{display:table-cell;width:1%;padding-right:10px;padding-left:10px;vertical-align:top}.section-header{border-top:4px solid #c7c7c7;border-bottom:2px solid #c7c7c7;padding:.2rem 0 .4rem;margin-bottom:1.5rem}.section-header h2{font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:900;font-size:1.75rem;letter-spacing:-.05rem;margin:0}.page-header{padding:1.5rem 0}.page-header .avatar{width:95px;max-width:100%;overflow:hidden;-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;margin:0 auto;display:block}.page-header .header-name{font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:3rem;font-weight:900;text-align:center;letter-spacing:-.15rem;line-height:1;margin:1rem 0 1rem}.page-header .header-contact{font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:1.5rem;font-weight:300;text-align:center;letter-spacing:-.15rem;line-height:2rem;margin:0 0 1rem 0}.page-header .title-bar{border-top:4px solid #c7c7c7;border-bottom:2px solid #c7c7c7;padding:.2rem 0 .4rem;padding:.4rem 0}.page-header .title-bar:before{display:table;content:""}.page-header .title-bar:after{display:table;clear:both;content:""}.page-header .title-bar .header-title{font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:300;font-size:1.75rem;line-height:2rem;letter-spacing:-.05rem;text-align:center;margin:0 0 .5rem}@media (min-width: 600px){.page-header .title-bar .header-title{float:left;margin:0}}@media (min-width: 600px){.page-header .executive-summary{font-size:1.125rem}}.icon-links{margin:0;padding:0;list-style:none;position:relative;top:4px;text-align:center;border-top:2px solid #c7c7c7;padding-top:.4rem}@media (min-width: 600px){.icon-links{float:right;border-top:none;padding-top:0}}.icon-links .icon-link-item{display:inline-block;margin-left:5px}.icon-links .icon-link{display:inline-block}.icon-links .icon-link:hover .icon path{fill:#333;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;transition:all 0.2s ease}.contact-button{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#efefef;text-decoration:none;text-align:center;display:block;margin:1.5rem auto;width:220px;font-size:1.375rem;font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:300;color:#333;line-height:55px;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;transition:all 0.2s ease}.contact-button:hover{background-color:#333;color:#fff}.contact-button.not-looking{width:400px}.content-section{margin:0 0 3rem}.content-section .resume-item{margin-bottom:2rem}.content-section .resume-item-title{font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:700;margin:0 0 .75rem;font-size:1.5rem;letter-spacing:-.05rem;line-height:1}.content-section .resume-item-details{font-size:1.125rem;margin:0 0 .75rem;line-height:1}.content-section .resume-item-title a,.content-section .resume-item-details a,.content-section .resume-item-copy a,.content-section .resume-item-list a{color:#333;text-decoration:none;border-bottom:1px solid}.content-section .resume-item-title a:hover,.content-section .resume-item-details a:hover,.content-section .resume-item-copy a:hover,.content-section .resume-item-list a:hover{border-bottom:none;color:#9c9c9c}.content-section .resume-item-copy{margin:.75rem 0 0}.page-footer{border-top:4px solid #c7c7c7;padding-top:1.5rem;text-align:center;margin-bottom:3rem}.page-footer .footer-line{margin:0;font-size:.875rem;color:#999}.page-footer .footer-line>a{font-weight:700;color:#333}
+
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Daniel Agans - Senior Devops Engineer</title>
+
+  <meta name="description" content="Resume for Daniel Agans">
+  <link rel="canonical" href="http://resume.sdf.ninja/">
+  <link rel="icon" type="image/x-icon" href="http://resume.sdf.ninja/favicon.png">
+</head>
+  <body class="theme-default">
+    <div class="wrapper">
+      <header class="page-header">
+        <h1 class="header-name">Senior Cloud Engineer</h1>
+        <h1 class="header-contact">DAgans@sdf.ninja - (248) 973 - 7448</h1>
+        <div class="title-bar">
+          <h2 class="header-title">Cloud Engineer</h2>
+          <ul class="icon-links">
+
+            <!-- GitHub link -->
+            <li class="icon-link-item">
+              <a href="https://github.com/phwelo" class="icon-link">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                  <path id="GitHub" fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="M14.01,0C6.27,0-0.01,6.28-0.01,14.02
+                    c0,6.19,4.02,11.45,9.59,13.3c0.7,0.13,0.96-0.3,0.96-0.68c0-0.33-0.01-1.21-0.02-2.38c-3.9,0.85-4.72-1.88-4.72-1.88
+                    c-0.64-1.62-1.56-2.05-1.56-2.05c-1.27-0.87,0.1-0.85,0.1-0.85c1.41,0.1,2.15,1.44,2.15,1.44c1.25,2.14,3.28,1.52,4.08,1.16
+                    c0.13-0.91,0.49-1.52,0.89-1.87c-3.11-0.35-6.38-1.56-6.38-6.93c0-1.53,0.55-2.78,1.44-3.76C6.37,9.17,5.89,7.74,6.65,5.81
+                    c0,0,1.18-0.38,3.85,1.44c1.12-0.31,2.32-0.47,3.51-0.47c1.19,0.01,2.39,0.16,3.51,0.47c2.68-1.81,3.85-1.44,3.85-1.44
+                    c0.76,1.93,0.28,3.35,0.14,3.71c0.9,0.98,1.44,2.23,1.44,3.76c0,5.38-3.28,6.57-6.4,6.92c0.5,0.43,0.95,1.29,0.95,2.6
+                    c0,1.87-0.02,3.39-0.02,3.84c0,0.37,0.25,0.81,0.96,0.67c5.56-1.86,9.58-7.11,9.58-13.3C28.03,6.28,21.75,0,14.01,0z"></path>
+                </svg>
+              </a>
+            </li>
+            
+            <!-- Twitter link -->
+            <li class="icon-link-item">
+              <a href="https://twitter.com/danielagans" class="icon-link">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                  <path id="Twitter" fill="#D1CECC" d="M14,0C6.27,0,0,6.27,0,14s6.27,14,14,14s14-6.27,14-14S21.73,0,14,0z M20.69,10.57
+                    c0.01,0.15,0.01,0.3,0.01,0.45c0,4.56-3.47,9.82-9.82,9.82c-1.95,0-3.76-0.57-5.29-1.55c0.27,0.03,0.54,0.05,0.82,0.05
+                    c1.62,0,3.11-0.55,4.29-1.48c-1.51-0.03-2.79-1.03-3.23-2.4c0.21,0.04,0.43,0.06,0.65,0.06c0.31,0,0.62-0.04,0.91-0.12
+                    c-1.58-0.32-2.77-1.71-2.77-3.39c0-0.01,0-0.03,0-0.04c0.47,0.26,1,0.41,1.56,0.43c-0.93-0.62-1.54-1.68-1.54-2.87
+                    c0-0.63,0.17-1.23,0.47-1.74c1.7,2.09,4.25,3.46,7.12,3.61c-0.06-0.25-0.09-0.52-0.09-0.79c0-1.91,1.55-3.45,3.45-3.45
+                    c0.99,0,1.89,0.42,2.52,1.09c0.79-0.15,1.53-0.44,2.19-0.84c-0.26,0.81-0.81,1.48-1.52,1.91c0.7-0.08,1.36-0.27,1.98-0.54
+                    C21.95,9.47,21.37,10.08,20.69,10.57z"></path>
+                  </svg>
+                </a>
+              </li>
+            
+            <!-- LinkedIn link -->
+            <li class="icon-link-item">
+              <a href="https://www.linkedin.com/in/sdfninja" class="icon-link">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                  <path id="LinkedIn" fill="#D1CECC" d="M18.82,15.09v3.61h-2.09v-3.37c0-0.85-0.3-1.42-1.06-1.42c-0.58,0-0.92,0.39-1.07,0.77
+                    c-0.06,0.13-0.07,0.32-0.07,0.51v3.52h-2.09c0,0,0.03-5.71,0-6.3h2.09v0.89c0,0.01-0.01,0.01-0.01,0.02h0.01V13.3
+                    c0.28-0.43,0.77-1.04,1.89-1.04C17.79,12.25,18.82,13.16,18.82,15.09z M9.18,18.7h2.09v-6.3H9.18V18.7z M10.24,9.36
+                    c-0.72,0-1.19,0.47-1.19,1.09c0,0.61,0.45,1.09,1.16,1.09h0.01c0.73,0,1.18-0.48,1.18-1.09C11.39,9.84,10.95,9.36,10.24,9.36z
+                    M28,14c0,7.73-6.27,14-14,14S0,21.73,0,14S6.27,0,14,0S28,6.27,28,14z M20.93,8.02c0-0.55-0.46-1-1.02-1H8.09
+                    c-0.57,0-1.02,0.45-1.02,1v11.96c0,0.55,0.46,1,1.02,1h11.82c0.57,0,1.02-0.45,1.02-1V8.02z"></path>
+                </svg>
+              </a>
+            </li>
+            
+            <!-- Website link -->
+            <li class="icon-link-item">
+              <a href="https://resume.sdf.ninja/" class="icon-link">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+                  <path id="Website" fill="#D1CECC" d="M14.83,7.6c0.03,0.08,0.03,0.14,0,0.19s-0.08,0.07-0.17,0.07c-0.12,0-0.26-0.01-0.4-0.04
+                    s-0.2-0.06-0.18-0.1c0.15-0.15,0.16-0.26,0.03-0.33c-0.13-0.07-0.27-0.11-0.42-0.11s-0.25-0.04-0.3-0.09s-0.03-0.09,0.05-0.09
+                    s0.22,0,0.4,0.01c0.19,0.01,0.31,0.04,0.37,0.08s0.17,0.1,0.33,0.19S14.8,7.52,14.83,7.6z M15.9,13.35c-0.11-0.03-0.2-0.03-0.26,0
+                    s-0.13,0.05-0.2,0.05c-0.08-0.01-0.25-0.09-0.5-0.24s-0.5-0.22-0.77-0.22c-0.11,0.01-0.17,0.04-0.19,0.08s-0.01,0.07,0.01,0.08
+                    c0.02,0.01,0.12,0.03,0.29,0.05s0.4,0.11,0.67,0.26c0.28,0.15,0.48,0.21,0.61,0.19s0.22-0.06,0.28-0.1
+                    c0.07-0.01,0.12-0.03,0.16-0.06S16.01,13.38,15.9,13.35z M13.62,6.85c0.17-0.03,0.3-0.13,0.38-0.3c0.03-0.14-0.04-0.2-0.21-0.18
+                    s-0.29,0.07-0.37,0.13c-0.01,0.03-0.02,0.06-0.03,0.09s-0.02,0.06-0.03,0.07l-0.08,0.1c-0.03,0.03-0.03,0.05-0.02,0.06
+                    C13.32,6.88,13.44,6.89,13.62,6.85z M16.12,7.08c-0.02-0.16-0.11-0.3-0.26-0.41s-0.32-0.19-0.5-0.22c-0.18-0.03-0.38-0.07-0.61-0.12
+                    s-0.4-0.04-0.53,0.04c-0.21,0.18-0.25,0.31-0.12,0.39c0.07,0.03,0.2,0.05,0.38,0.06s0.44,0.15,0.76,0.41
+                    c0.11,0.08,0.29,0.21,0.55,0.37s0.44,0.23,0.55,0.19c0.06-0.06,0.04-0.15-0.05-0.28S16.14,7.24,16.12,7.08z M28,14
+                    c0,7.73-6.27,14-14,14S0,21.73,0,14S6.27,0,14,0S28,6.27,28,14z M21.95,14c-0.06-2.25-0.83-4.12-2.33-5.62
+                    c-1.5-1.5-3.37-2.27-5.62-2.33c-2.25,0.06-4.12,0.83-5.62,2.33c-1.5,1.5-2.27,3.37-2.33,5.62c0.06,2.25,0.83,4.12,2.33,5.62
+                    c1.5,1.5,3.37,2.27,5.62,2.33c0.54,0,1.06-0.05,1.57-0.14c-0.11-0.07-0.17-0.24-0.18-0.51s0.04-0.52,0.16-0.76
+                    c0.15-0.26,0.3-0.61,0.46-1.04c0.15-0.43,0.08-0.77-0.23-1c-0.32-0.18-0.51-0.34-0.57-0.49s-0.19-0.32-0.37-0.54
+                    s-0.28-0.36-0.28-0.44v-0.21c-0.01-0.21,0.05-0.43,0.19-0.66l0.25-0.39c0.01-0.04,0.02-0.1,0.02-0.19v-0.19
+                    c-0.01-0.04-0.07-0.09-0.17-0.16s-0.17-0.1-0.22-0.1s-0.09,0.01-0.11,0.05s-0.07,0.06-0.13,0.06s-0.17-0.04-0.33-0.13
+                    c-0.16-0.09-0.27-0.16-0.32-0.21s-0.1-0.11-0.14-0.19s-0.09-0.15-0.16-0.22s-0.11-0.1-0.16-0.09s-0.12,0-0.23-0.03l-1.45-0.56
+                    c-0.26-0.11-0.43-0.23-0.5-0.37c-0.07-0.14-0.1-0.26-0.1-0.37s-0.06-0.23-0.17-0.37l-0.29-0.37c-0.08-0.12-0.14-0.24-0.17-0.34
+                    s-0.05-0.15-0.06-0.13c-0.01,0.07,0.02,0.23,0.1,0.48s0.12,0.39,0.1,0.43c-0.03,0.01-0.07-0.02-0.12-0.11s-0.12-0.19-0.19-0.3
+                    c-0.06-0.07-0.07-0.15-0.04-0.25c0.03-0.1-0.07-0.38-0.29-0.85c-0.22-0.47-0.26-0.85-0.11-1.15s0.24-0.57,0.3-0.82
+                    c0.03-0.21,0.09-0.25,0.19-0.13c0.1,0.12,0.1,0.11,0.02-0.01c-0.08-0.18-0.11-0.4-0.08-0.65c0.03-0.26,0.01-0.46-0.06-0.61
+                    c-0.11-0.1-0.3-0.08-0.58,0.05S9.12,8.14,9.1,8.16c0.03-0.12,0.18-0.28,0.46-0.46l0.87-0.58c0.26-0.17,0.49-0.22,0.69-0.17
+                    s0.41,0.12,0.62,0.21s0.34,0.12,0.37,0.1s0.01-0.06-0.06-0.13s-0.07-0.13,0.01-0.16S12.26,6.96,12.43,7
+                    c0.17,0.03,0.31,0.11,0.42,0.24s0.3,0.18,0.54,0.17s0.32,0.01,0.25,0.06s-0.11,0.12-0.11,0.19c0.04,0.06,0.02,0.1-0.05,0.13
+                    s-0.2,0.1-0.36,0.21s-0.18,0.19-0.05,0.26c0.13,0.07,0.36,0.21,0.67,0.41c0.28,0.19,0.41,0.19,0.41-0.01s-0.02-0.4-0.06-0.61
+                    c-0.01-0.14,0.05-0.19,0.2-0.14s0.22,0.07,0.24,0.08c0.17,0.11,0.27,0.15,0.32,0.11s0.13-0.04,0.26-0.01
+                    c0.17,0.07,0.37,0.19,0.6,0.37l0.41,0.33c-0.43,0.25-0.6,0.41-0.51,0.49s0.2,0.14,0.32,0.2c0.06,0.06,0.02,0.12-0.1,0.21
+                    s-0.2,0.12-0.23,0.12c-0.08-0.08-0.15-0.1-0.2-0.05s-0.1,0.09-0.16,0.13c-0.06,0.04-0.07,0.09-0.05,0.14s0.04,0.09,0.05,0.1
+                    c-0.3,0.07-0.47,0.22-0.49,0.44s-0.02,0.39-0.01,0.49c0,0.08-0.07,0.18-0.21,0.3s-0.24,0.23-0.31,0.34c-0.03,0.14,0,0.29,0.08,0.47
+                    c0.08,0.17,0.08,0.27,0,0.3c-0.08-0.01-0.22-0.12-0.41-0.32c-0.19-0.2-0.55-0.24-1.08-0.13c-0.19,0.04-0.39,0.16-0.6,0.36
+                    s-0.23,0.49-0.06,0.88c0.21,0.32,0.43,0.38,0.68,0.19c0.25-0.19,0.43-0.3,0.56-0.31c0.1,0.08,0.12,0.2,0.06,0.35
+                    c-0.06,0.15-0.08,0.24-0.08,0.27c0.06-0.01,0.17,0.02,0.34,0.09s0.28,0.27,0.32,0.58c0.04,0.31,0.19,0.49,0.46,0.55
+                    s0.45,0.08,0.57,0.07s0.28-0.09,0.48-0.24s0.32-0.24,0.37-0.27s0.17-0.06,0.35-0.1s0.47,0.03,0.84,0.23s0.67,0.31,0.88,0.35
+                    s0.38,0.11,0.5,0.2s0.18,0.2,0.18,0.33s0.05,0.23,0.14,0.3c0.15,0.04,0.39,0.07,0.72,0.07s0.57,0.1,0.72,0.28
+                    c0.07,0.28-0.08,0.73-0.46,1.38c-0.37,0.64-0.68,1.05-0.93,1.23c-0.18,0.12-0.34,0.29-0.48,0.49s-0.3,0.38-0.49,0.55
+                    s-0.41,0.34-0.66,0.52s-0.51,0.34-0.78,0.5c-0.21,0.15-0.36,0.32-0.46,0.51s-0.19,0.32-0.27,0.4c1.81-0.43,3.28-1.34,4.43-2.75
+                    C21.31,17.6,21.9,15.93,21.95,14z"></path>
+                </svg>
+              </a>
+          </li>
+      </ul>
+    </div>
+
+        <div class="executive-summary">
+          <p>Devops/Cloud Engineer using Devops principles and the power of code to automate as many things as they will let me.</p>
+        </div>
+      </header>
+
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Groundspeed Analytics</h3>
+          <h4 class="resume-item-details">Senior Cloud Engineer • Nov 2018 — Present</h4>
+          <p class="resume-item-copy">Using Python and Terraform to bring order to a Startup's chaotic AWS account</p>
+          <ul class="resume-item-list">
+            <li>First Devops Engineer at 50-100 user startup</li>
+            <li>Buildout of Terraformed ECS Services</li>
+            <li>Preparation for and Completion of SOC Certification</li>
+            <li>Wrote SNS and SQS Terraform modules to abstract them for use by Engineers</li>
+            <li>Maintenance of entire AWS account using lots of Boto3</li>
+          </ul>
+        </div><!-- end of resume-item -->
+        
+        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">LLamaSoft</h3>
+          <h4 class="resume-item-details">Senior Cloud Engineer • Nov 2016 — Nov 2018</h4>
+          <p class="resume-item-copy">Using Chef, Jenkins, AWS, Packer, 
+and Terraform to build an infrastructure pipeline. Using custom Chef 
+resources to deploy services, with Jenkins pipelines orchestrating the 
+show. </p>
+          <ul class="resume-item-list">
+            <li>First ever Devops Engineer in the organization, which facilitated lots of valuable experience</li>
+            <li>Introduced Chef to the organization, and built all of the initial cookbooks for services</li>
+            <li>Created many small tools for the team with both Powershell (Windows Deskside) and Ruby (Anything Else)</li>
+            <li>Creating tooling for cross-platform use via Python and Ruby (After the team became multiplatform on their workstations)</li>
+            <li>Identify most effective improvements and schedule the work into sprints</li>
+            <li>Work with individual dev teams to standardize deployments</li>
+            <li>Worked with one of our more progressive teams to allow 
+their desktop application to log into Elasticsearch &amp; integrate into
+ third party systems for analysis.</li>
+            <li>Code tracking and collaboration via Github ♥</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Ford Motor Company</h3>
+          <h4 class="resume-item-details">Server Automation Engineer • July 2015 — Nov 2016</h4>
+          <p class="resume-item-copy">Tasked with writing scripts in Ruby and the Chef Domain Specific Language to automate various processes </p>
+          <ul class="resume-item-list">
+            <li>First engineer hired to do only Devops, participated in lots of strategy and evangelization meetings.</li>
+            <li>Utilizing Chef to Automate Server Configurations</li>
+            <li>Developing Vagrantfiles to ease local development for the organization</li>
+            <li>Code tracking and collaboration via Github ♥</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <!-- another resume item -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Level One Bank</h3>
+          <h4 class="resume-item-details">Sr Network Engineer (System Administrator) • Sep 2013 — July 2015</h4>
+          <p class="resume-item-copy">Oversaw all IT functions, delegating tasks to teammates as well as myself.</p>
+          <ul class="resume-item-list">
+            <li>Design and Support IT Infrastructure for 200 User Environment with 10 Branch Locations</li>
+            <li>Automated workstation imaging process & training machine preparation processes</li>
+            <li>Introduced infrastructure logging and monitoring</li>
+            <li>Used PHP, NGINX, LDAP, MySQL in projects to test security as well as simpler systems to ease helpdesk tasks.</li>
+            <li>Architected and deployed VPN, WIFI, DR, SAN, and security solutions.</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <!-- by now you're getting the picture... -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Greenpath Debt Solutions</h3>
+          <h4 class="resume-item-details">System Administrator • Sep 2011 — Sep 2013</h4>
+          <p class="resume-item-copy">Administration of (largely) helpdesk solutions for a 500+ user nonprofit.</p>
+          <ul class="resume-item-list">
+            <li>Implemented Monitoring, Logging, and Alerting to give us visibility into infrastructure</li>
+            <li>Replaced fleet of Terminal Services servers with VMWare View VDI,
+introducing vast improvement including 
+ability to stream audio and video over WAN</li>
+            <li>Developed a tool to allow for chat support team to more 
+quickly enter information, severely improving chatter speed</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <!-- by now you're getting the picture... -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Verizon/Frontier Communications</h3>
+          <h4 class="resume-item-details">Systems Engineer • May 2006 — Sep 2011</h4>
+          <p class="resume-item-copy">Advanced support technician for several internal &amp; external customers</p>
+          <ul class="resume-item-list">
+            <li>Used the power of scripting™ to work my way from first level technician on an internal team to top tier support on our highest paying external customer.</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+      </section>
+      <!-- end Experience -->
+
+      <footer class="page-footer">
+        <p class="footer-line">Made by <a href="http://twitter.com/danielagans">@danielagans</a>. Fork me on <a href="https://github.com/phwelo">GitHub</a>.</p>
+      </footer>
+
+    </div>
