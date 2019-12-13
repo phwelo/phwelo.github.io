@@ -1,0 +1,26 @@
+current directory: /home/dagans/projects/phwelo.github.io/ruby/2.6.0/gems/yajl-ruby-1.2.1/ext/yajl
+/usr/bin/ruby -I /usr/lib/ruby/2.6.0 -r ./siteconf20191212-22168-1riy47l.rb extconf.rb
+creating Makefile
+
+current directory: /home/dagans/projects/phwelo.github.io/ruby/2.6.0/gems/yajl-ruby-1.2.1/ext/yajl
+make "DESTDIR=" clean
+
+current directory: /home/dagans/projects/phwelo.github.io/ruby/2.6.0/gems/yajl-ruby-1.2.1/ext/yajl
+make "DESTDIR="
+compiling yajl.c
+compiling yajl_alloc.c
+compiling yajl_buf.c
+compiling yajl_encode.c
+compiling yajl_ext.c
+yajl_ext.c: In function ‘rb_yajl_parser_parse’:
+yajl_ext.c:471:17: warning: variable ‘stat’ set but not used [-Wunused-but-set-variable]
+  471 |     yajl_status stat;
+      |                 ^~~~
+yajl_ext.c: In function ‘rb_yajl_encoder_enable_json_gem_ext’:
+yajl_ext.c:881:22: error: ‘rb_cFixnum’ undeclared (first use in this function)
+  881 |     rb_define_method(rb_cFixnum, "to_json", rb_yajl_json_ext_fixnum_to_json, -1);
+      |                      ^~~~~~~~~~
+yajl_ext.c:881:22: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:245: yajl_ext.o] Error 1
+
+make failed, exit code 2
